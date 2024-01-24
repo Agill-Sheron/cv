@@ -20,259 +20,210 @@ import {
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
+  name: "Malik Aghiles Tahir",
+  initials: "MAT",
+  location: "Montreal, Canada, EST (UTC-5) 🇨🇦 ",
+  locationLink: "https://www.google.com/maps/place/Montreal,+QC,+Canada/",
   about:
-    "Full Stack Engineer focused on building products with extra attention to detail",
+    "Full Stack Engineer focused on building scalable and elegant solutions",
   summary:
-    "As a Full Stack Engineer, I have successfully taken multiple products from 0 to 1. I lead teams effectively, ensuring an environment where people can do their best work. Currently, I work mostly with TypeScript, React, Node.js, and GraphQL. I have over 8 years of experience in working remotely with companies all around the world.",
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+    "I am a Full Stack Engineer and recent Computer Science graduate with a deep-rooted entrepreneurial mindset. With a year of enriching internship experience followed by a year as a junior to mid-level software engineer, my journey has been marked by constant skill enhancement in programming since 2021. Currently, I work mostly with JavaScript, React, Node.js, and MongoDB. I have 3 years of experience working on a wide variety of projects",
+  avatarUrl: "https://avatars.githubusercontent.com/u/29054481?v=4",
+  personalWebsiteUrl: "",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "ag.malik.tahir@gmail.com",
+    tel: "+15147951812",
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
+        url: "https://github.com/Agill-Sheron",
         icon: GitHubIcon,
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
+        url: "https://www.linkedin.com/in/malik-aghiles-tahir/",
         icon: LinkedInIcon,
-      },
-      {
-        name: "X",
-        url: "https://x.com/BartoszJarocki",
-        icon: XIcon,
       },
     ],
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "Concordia University",
+      degree: "Bachelor's Degree in Computer Science",
+      start: "2018",  
+      end: "2023",
     },
   ],
   work: [
     {
-      company: "Parabol",
-      link: "https://parabol.co",
-      badges: ["Remote"],
-      title: "Senior Full Stack Developer",
-      logo: ParabolLogo,
-      start: "2021",
-      end: "2024",
+      company: "Activix Inc.",
+      link: "https://www.activix.ca/en",
+      badges: ["Vue.js","Laravel", "PostgreSQL"],
+      title: "Full Stack Developer",
+     
+      start: "Aug 2021",
+      end: "Sep 2022",
       description:
-        "Implemented new features, led squad, worked on improving the way developers ship the code, started migration from Emotion to Tailwind CSS and more. Technologies: React, TypeScript, GraphQL",
+        "Following the CTO's lead, my colleague and I implemented security enhancements by segregating user and admin roles, fortifying platform integrity. Implemented a CRM feature for accurate car image matching to leads' specs. Refactored legacy code following single responsibility principles and Lucid architecture, elevating system efficiency. My approach to problem-solving involved in-depth root cause analysis. I ensured robust CI/CD processes by creating comprehensive unit tests for each new feature. Collaborated with the CTO to integrate a third-party data analysis tool, enhancing clients' business insights and milestone tracking",
     },
     {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
-      badges: ["Remote"],
-      title: "Lead Android Developer → Full Stack Developer",
-      logo: ClevertechLogo,
-      start: "2015",
-      end: "2021",
+      company: "SnapX",
+      link: "",
+      badges: ["Blade", "Laravel"],
+      title: "Intern - Full Stack Developer",
+      start: "May 2020",
+      end: "Nov 2020",
       description:
-        "Created Android mobile apps and led teams for companies like Vision Media, DKMS, or AAA. Built live streaming application for Evercast from scratch. Technologies: Android, Kotlin, React, TypeScript, GraphQL",
+        "Localizing website content from English to French using PHP Laravel. Skilled in data scraping with Scrapy and Beautiful Soup, I compiled critical datasets. Played a key role in integrating PayPal payments and supported senior developers in billing process implementation.",
     },
     {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
-      badges: [],
-      title: "Android Developer → Lead Android Developer",
-      logo: JojoMobileLogo,
-      start: "2012",
-      end: "2015",
+      company: "Lockheed Martin",
+      link: "https://www.lockheedmartin.com/",
+      badges: ["Java", "Spring", "Jenkins", "SVN"],
+      title: "Intern - Software Engineer",
+      start: "Jan 2020",
+      end: "Apr 2020",
       description:
-        "Built an Android team, created Android apps for biggest Polish companies like LOT, Polskie Radio, Agora, PolskaPress",
-    },
-    {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
-      badges: [],
-      title: "C/C++ Developer",
-      logo: NSNLogo,
-      start: "2010",
-      end: "2012",
-      description: "Creating and testing software for LTE base stations",
+        "Revitalized video recording tool by upgrading its streaming codec. Conducted in-depth research on container technologies, influencing shift from VMs. Excelled in debugging, resolving critical issues through thorough root cause analysis",
     },
   ],
   skills: [
     "JavaScript",
-    "TypeScript",
-    "React/Next.js/Remix",
+    "Php/Laravel",
+    "Java",
+    "Vue.js",
+    "React",
     "Node.js",
-    "GraphQL",
-    "Relay",
-    "WebRTC",
+    "Python",
+    "TensorFlow",
+    "PyTorch",
+    "Figma",
+    "Mongoose",
+    "Express",
+    "MongoDB",
+    "MySQL",
   ],
   projects: [
     {
-      title: "Consultly",
+      title: "Forward 360",
       techStack: [
         "Side Project",
-        "TypeScript",
-        "Next.js",
+        "MongoDB",
+        "Express",
         "Vite",
-        "GraphQL",
-        "WebRTC",
-      ],
-      description: "A platform to build and grow your online business",
-      logo: ConsultlyLogo,
-      link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
-      },
-    },
-    {
-      title: "Monito",
-      techStack: ["Side Project", "TypeScript", "Next.js", "Browser Extension"],
-      description:
-        "Browser extension that records everything happening in a web application",
-      logo: MonitoLogo,
-      link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
-      },
-    },
-    {
-      title: "Jarocki.me",
-      techStack: ["Side Project", "Next.js", "MDX"],
-      description:
-        "My personal website and blog. Built with Next.js and Notion API",
-      logo: JarockiMeLogo,
-      link: {
-        label: "github.com",
-        href: "https://jarocki.me/",
-      },
-    },
-    {
-      title: "Minimal",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
-      description:
-        "Minimalist calendars, habit trackers and planners generator",
-      logo: Minimal,
-      link: {
-        label: "useminimal.com",
-        href: "https://useminimal.com/",
-      },
-    },
-    {
-      title: "Barepapers",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
-      description:
-        "Generates beautiful wallpapers using random shapes and gradients",
-      logo: BarepapersLogo,
-      link: {
-        label: "barepapers.com",
-        href: "https://barepapers.com/",
-      },
-    },
-    {
-      title: "Year progress",
-      techStack: ["Side Project", "TypeScript", "Next.js"],
-      description: "Tracks current year progress and displays a countdown",
-      logo: YearProgressLogo,
-      link: {
-        label: "getyearprogress.com",
-        href: "https://getyearprogress.com/",
-      },
-    },
-    {
-      title: "Parabol",
-      techStack: [
-        "Full Stack Developer",
-        "TypeScript",
         "React",
         "Node.js",
-        "GraphQL",
+        "AdminJs",
       ],
-      description:
-        "The Agile meeting co-pilot that delivers better meetings with less effort",
-      logo: ParabolLogo,
+      description: "A logistics platform for the 21st century. Provides a simple and intuitive way to manage your logistics.",
       link: {
-        label: "github.com",
-        href: "https://parabol.co/",
+        label: "forward360.com",
+        href: "https://forward-360.netlify.app/",
       },
     },
-    {
-      title: "Evercast",
-      techStack: [
-        "Lead Frontend Developer",
+  ],
+} as const;
 
-        "TypeScript",
+export const RESUME_DATA_FR = {
+  name: "Malik Aghiles Tahir",
+  initials: "MAT",
+  location: "Montréal, Canada, HNE (UTC-5) 🇨🇦",
+  locationLink: "https://www.google.com/maps/place/Montreal,+QC,+Canada/",
+  about:
+    "Ingénieur Full Stack axé sur la création de solutions évolutives et élégantes",
+  summary:
+    "Je suis un Ingénieur Full Stack et récent diplômé en informatique avec un esprit entrepreneurial profondément enraciné. Avec une année d'expérience enrichissante en stage suivie et d'un an en tant qu'ingénieur logiciel junior à intermédiaire, mon parcours a été marqué par un renforcement constant de mes compétences en programmation depuis 2020. Actuellement, je travaille principalement avec JavaScript, React, Node.js et MongoDB. J'ai 3 ans d'expérience sur une grande variété de projets",
+  avatarUrl: "https://avatars.githubusercontent.com/u/29054481?v=4",
+  personalWebsiteUrl: "",
+  contact: {
+    email: "ag.malik.tahir@gmail.com",
+    tel: "+15147951812",
+    social: [
+      {
+        name: "GitHub",
+        url: "https://github.com/Agill-Sheron",
+        icon: GitHubIcon,
+      },
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/malik-aghiles-tahir/",
+        icon: LinkedInIcon,
+      },
+    ],
+  },
+  education: [
+    {
+      school: "Université Concordia",
+      degree: "Baccalauréat en Science Informatique",
+      start: "2018",
+      end: "2023",
+    },
+  ],
+  work: [
+    {
+      company: "Activix Inc.",
+      link: "https://www.activix.ca/en",
+      badges: ["Vue.js", "Laravel", "PostgreSQL"],
+      title: "Développeur Full Stack",
+      start: "Août 2021",
+      end: "Sept 2022",
+      description:
+        "Sous la direction du CTO, mon collègue et moi avons mis en œuvre des améliorations de sécurité en séparant les rôles utilisateur et administrateur, renforçant ainsi l'intégrité de la plateforme. Implémentation d'une fonctionnalité CRM pour un appariement précis des images de voitures avec les spécifications des prospects. Refonte du code hérité en suivant les principes de responsabilité unique et l'architecture Lucide, améliorant ainsi l'efficacité du système. Mon approche de résolution de problèmes impliquait une analyse approfondie des causes afin d'implémenter les solutions optimales. J'ai assuré des processus CI/CD robustes en créant des tests unitaires complets pour chaque nouvelle fonctionnalité. Collaboration avec le CTO pour intégrer un outil d'analyse de données tiers, améliorant les informations commerciales des clients",
+    },
+    {
+      company: "SnapX",
+      link: "",
+      badges: ["Blade", "Laravel"],
+      title: "Stagiaire - Développeur Full Stack",
+      start: "Mai 2020",
+      end: "Nov 2020",
+      description:
+        "Localisation du contenu du site Web de l'anglais au français en utilisant PHP Laravel. Compétent en scrapage de données avec Scrapy et Beautiful Soup, j'ai compilé des ensembles de données critiques pour l'entreprise. J'ai joué un rôle clé dans l'intégration des paiements PayPal et soutenu les développeurs seniors dans la mise en œuvre du processus de facturation.",
+    },
+    {
+      company: "Lockheed Martin",
+      link: "https://www.lockheedmartin.com/",
+      badges: ["Java", "Spring", "Jenkins", "SVN"],
+      title: "Stagiaire - Ingénieur Logiciel",
+      start: "Jan 2020",
+      end: "Avr 2020",
+      description:
+        "Revitalisation de l'outil d'enregistrement vidéo en mettant à niveau son codec de streaming. Recherche approfondie sur les technologies de conteneurisation, influençant le processus de transition des VMs. Excellente performance en débogage, résolvant des problèmes critiques grâce à une analyse approfondie des causes sous-jacentes",
+    },
+  ],
+  skills: [
+    "JavaScript",
+    "Php/Laravel",
+    "Java",
+    "Vue.js",
+    "React",
+    "Node.js",
+    "Python",
+    "TensorFlow",
+    "PyTorch",
+    "Figma",
+    "Mongoose",
+    "Express",
+    "MongoDB",
+    "MySQL",
+  ],
+  projects: [
+    {
+      title: "Forward 360",
+      techStack: [
+        "Projet Personnel",
+        "MongoDB",
+        "Express",
+        "Vite",
         "React",
         "Node.js",
-        "GraphQL",
+        "AdminJs",
       ],
-      description:
-        "Creative collaboration platform that combines video conferencing and HD media streaming",
-      logo: EvercastLogo,
+      description: "Une plateforme logistique pour le 21e siècle. Offre un moyen simple et intuitif de gérer votre logistique.",
       link: {
-        label: "evercast.us",
-        href: "https://www.evercast.us/",
+        label: "forward360.com",
+        href: "https://forward-360.netlify.app/",
       },
-    },
-    {
-      title: "Mobile Vikings",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application for leading virtual mobile operator in Poland",
-      logo: MobileVikingsLogo,
-      link: {
-        label: "mobilevikings.pl",
-        href: "https://mobilevikings.pl/",
-      },
-    },
-    {
-      title: "Howdy",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Howdy is a place for you to join communities you care about",
-      logo: Howdy,
-      link: {
-        label: "play.google.com",
-        href: "https://howdy.co/",
-      },
-    },
-    {
-      title: "Tastycloud",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application for managing and displaying restaurant menus in kiosk mode",
-      logo: TastyCloudLogo,
-      link: {
-        label: "tastycloud.fr",
-        href: "https://www.tastycloud.fr/",
-      },
-    },
-    {
-      title: "Ambit",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application that helps with sharing your contact details",
-      logo: AmbitLogo,
-    },
-    {
-      title: "Bim",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application that helps with booking a table in a restaurants",
-      logo: BimLogo,
-    },
-    {
-      title: "Canal Digital GO",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Video streaming mobile application for Canal Digital subscribers",
-      logo: CDGOLogo,
     },
   ],
 } as const;
