@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 
 import "./globals.css";
 import React from "react";
+import { TranslationProvider } from "@/contexts/TranslationContext";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,8 +24,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.className}>
-      <body>{children}</body>
-      <Analytics />
+      <body>
+        <TranslationProvider>
+          {children}
+        </TranslationProvider>
+        <Analytics />
+      </body>
     </html>
   );
 }

@@ -1,0 +1,131 @@
+{
+  "sections": {
+    "about": "À propos",
+    "work": "Expérience professionnelle",
+    "education": "Éducation",
+    "skills": "Compétences techniques",
+    "projects": "Projets"
+  },
+  "buttons": {
+    "print": "Imprimer",
+    "website": "Site personnel"
+  },
+  "resume": {
+    "name": "Malik Aghiles Tahir",
+    "about": {
+      "general": "Ingénieur Full Stack axé sur la création de solutions évolutives et élégantes",
+      "bitcoin": "Ingénieur Full Stack axé sur la promotion de l'adoption de Bitcoin"
+    },
+    "location": "Montréal, Canada, HNE (UTC-5) 🇨🇦",
+    "locationLink": "https://www.google.com/maps/place/Montreal,+QC,+Canada/",
+    "summary": {
+      "general": "Je suis un Ingénieur Full Stack et récent diplômé en informatique avec un esprit entrepreneurial profondément enraciné. Avec une année d'expérience enrichissante en stage suivie et d'un an en tant qu'ingénieur logiciel junior à intermédiaire, mon parcours a été marqué par un renforcement constant de mes compétences en programmation depuis 2020. Actuellement, je travaille principalement avec JavaScript, React, Node.js et MongoDB. J'ai 3 ans d'expérience sur une grande variété de projets",
+      "bitcoin": "Je suis un passionné de Bitcoin et je suis impliqué dans l'écosystème Bitcoin depuis 2018. Je connais bien la technologie et son potentiel à transformer la finance."
+    },
+    "education": [
+      {
+        "school": "Université Concordia",
+        "degree": "Baccalauréat en Science Informatique",
+        "start": "2018",
+        "end": "2023"
+      }
+    ],
+    "work": [
+      {
+        "company": "Geyser Fund",
+        "link": "https://geyser.fund/",
+        "badges": ["React", "Typescript", "GraphQL", "Prisma", "Postgres"],
+        "title": "Développeur Full Stack",
+        "start": "Mars 2024",
+        "end": "Octobre 2024",
+        "description": "J'ai été responsable du développement de l'interface utilisateur et du backend de la plateforme, avec une attention particulière pour l'interface utilisateur, en collaboration étroite avec les autres développeurs et l'équipe produit. J'ai également joué un rôle clé dans la re-design de la plateforme pour améliorer l'expérience utilisateur et l'aspect visuel global de la plateforme."
+      },
+      {
+        "company": "Activix Inc.",
+        "link": "https://www.activix.ca/fr",
+        "badges": ["Vue.js", "Laravel", "PostgreSQL"],
+        "title": "Développeur Full Stack",
+        "start": "Août 2021",
+        "end": "Sept 2022",
+        "description": "Sous la direction du CTO, mon collègue et moi avons mis en œuvre des améliorations de sécurité en séparant les rôles utilisateur et administrateur, renforçant ainsi l'intégrité de la plateforme. Implémentation d'une fonctionnalité CRM pour un appariement précis des images de voitures avec les spécifications des prospects. Refonte du code hérité en suivant les principes de responsabilité unique et l'architecture Lucide, améliorant ainsi l'efficacité du système. Mon approche de résolution de problèmes impliquait une analyse approfondie des causes afin d'implémenter les solutions optimales. J'ai assuré des processus CI/CD robustes en créant des tests unitaires complets pour chaque nouvelle fonctionnalité. Collaboration avec le CTO pour intégrer un outil d'analyse de données tiers, améliorant les informations commerciales des clients"
+      },
+      {
+        "company": "SnapX",
+        "link": "",
+        "badges": ["Blade", "Laravel"],
+        "title": "Stagiaire - Développeur Full Stack",
+        "start": "Mai 2020",
+        "end": "Nov 2020",
+        "description": "Localisation du contenu du site Web de l'anglais au français en utilisant PHP Laravel. Compétent en scrapage de données avec Scrapy et Beautiful Soup, j'ai compilé des ensembles de données critiques pour l'entreprise. J'ai joué un rôle clé dans l'intégration des paiements PayPal et soutenu les développeurs seniors dans la mise en œuvre du processus de facturation."
+      },
+      {
+        "company": "Lockheed Martin",
+        "link": "https://www.lockheedmartin.com/",
+        "badges": ["Java", "Spring", "Jenkins", "SVN"],
+        "title": "Stagiaire - Ingénieur Logiciel",
+        "start": "Jan 2020",
+        "end": "Avr 2020",
+        "description": "Revitalisation de l'outil d'enregistrement vidéo en mettant à niveau son codec de streaming. Recherche approfondie sur les technologies de conteneurisation, influençant le processus de transition des VMs. Excellente performance en débogage, résolvant des problèmes critiques grâce à une analyse approfondie des causes sous-jacentes"
+      },
+      {
+        "company": "Mining X",
+        "link": "",
+        "badges": [],
+        "title": "Co-Fondateur",
+        "start": "Jan 2018",
+        "end": "Jan 2019",
+        "description": "En tant que co-fondateur de MiningX, j'ai dirigé le développement et l'optimisation de notre infrastructure minière, de la configuration matérielle et logicielle au dépannage et à la maintenance. J'ai également joué un rôle clé dans l'analyse de marché, la relation avec les fournisseurs et l'éducation des clients, en donnant des présentations sur la technologie blockchain et Bitcoin. De plus, j'ai collaboré avec Catallaxy RCGT à la conception et à l'exécution de projets miniers spécifiques aux clients."
+      }
+    ],
+    "projects": [
+      {
+        "title": "Forward 360",
+        "techStack": [
+          "Projet Personnel",
+          "MongoDB",
+          "Express",
+          "Vite",
+          "React",
+          "Node.js",
+          "AdminJs"
+        ],
+        "description": "Une plateforme logistique pour le 21e siècle. Offre un moyen simple et intuitif de gérer votre logistique.",
+        "link": {
+          "label": "forward360.com",
+          "href": "https://forward-360.netlify.app/"
+        }
+      },
+      {
+        "title": "Geyser Fund",
+        "techStack": ["React", "Typescript", "Jotai", "GraphQL", "Prisma", "Postgres"],
+        "description": "Une plateforme de financement participatif visant à accélérer l'adoption de Bitcoin en utilisant le Lightning Network.",
+        "link": {
+          "label": "geyser.fund",
+          "href": "https://geyser.fund/"
+        }
+      }
+    ],
+    "skills": [
+      "JavaScript",
+      "Typescript",
+      "Php/Laravel",
+      "Java",
+      "Vue.js",
+      "React",
+      "Node.js",
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "Figma",
+      "Mongoose",
+      "Express",
+      "MongoDB",
+      "MySQL",
+      "GraphQL",
+      "Prisma",
+      "Jotai",
+      "AdminJs",
+      "Postgres"
+    ]
+  }
+}

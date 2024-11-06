@@ -19,6 +19,71 @@ import {
 } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
+const about = {
+  general : {
+    en: "Full Stack Engineer focused on building scalable and elegant solutions",
+    fr: "Ingénieur Full Stack axé sur la création de solutions évolutives et élégantes",
+  },
+  bitcoin : {
+    en: "Full Stack Engineer focused on promoting Bitcoin adoption",
+    fr: "Ingénieur Full Stack axé sur la promotion de l'adoption de Bitcoin",
+  }
+}
+
+const summary = {
+  general : {
+    en: "I am a Full Stack Engineer and recent Computer Science graduate with a deep-rooted entrepreneurial mindset. With a year of enriching internship experience followed by a year as a junior to mid-level software engineer, my journey has been marked by constant skill enhancement in programming since 2021. Currently, I work mostly with JavaScript, React, Node.js, and MongoDB. I have 3 years of experience working on a wide variety of projects",
+    fr: "Je suis un Ingénieur Full Stack et récent diplômé en informatique avec un esprit entrepreneurial profondément enraciné. Avec une année d'expérience enrichissante en stage suivie et d'un an en tant qu'ingénieur logiciel junior à intermédiaire, mon parcours a été marqué par un renforcement constant de mes compétences en programmation depuis 2020. Actuellement, je travaille principalement avec JavaScript, React, Node.js et MongoDB. J'ai 3 ans d'expérience sur une grande variété de projets",
+  },
+
+  bitcoin : {
+    en: "I am a Bitcoin enthusiast and have been involved in the Bitcoin ecosystem since 2018. I have a deep understanding of the technology and its potential impact on the financial landscape.",
+    fr: "Je suis un passionné de Bitcoin et je suis impliqué dans l'écosystème Bitcoin depuis 2018. Je connais bien la technologie et son potentiel à transformer la finance.",
+  }
+}
+
+const avatarUrl = "https://avatars.githubusercontent.com/u/29054481?v=4"
+
+const contact =  {
+  email: "ag.malik.tahir@gmail.com",
+  tel: "+15147951812",
+  social: [
+    {
+      name: "GitHub",
+      url: "https://github.com/Agill-Sheron",
+      icon: GitHubIcon,
+    },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/malik-aghiles-tahir/",
+      icon: LinkedInIcon,
+    },
+  ],
+}
+
+const SKILLS = [
+  "JavaScript",
+  "Typescript",
+  "Php/Laravel",
+  "Java",
+  "Vue.js",
+  "React",
+  "Node.js",
+  "Python",
+  "TensorFlow",
+  "PyTorch",
+  "Figma",
+  "Mongoose",
+  "Express",
+  "MongoDB",
+  "MySQL",
+  "GraphQL",
+  "Prisma",
+  "Jotai",
+  "AdminJs",
+  "Postgres",
+]
+
 export const RESUME_DATA = {
   name: "Malik Aghiles Tahir",
   initials: "MAT",
@@ -30,22 +95,7 @@ export const RESUME_DATA = {
     "I am a Full Stack Engineer and recent Computer Science graduate with a deep-rooted entrepreneurial mindset. With a year of enriching internship experience followed by a year as a junior to mid-level software engineer, my journey has been marked by constant skill enhancement in programming since 2021. Currently, I work mostly with JavaScript, React, Node.js, and MongoDB. I have 3 years of experience working on a wide variety of projects",
   avatarUrl: "https://avatars.githubusercontent.com/u/29054481?v=4",
   personalWebsiteUrl: "",
-  contact: {
-    email: "ag.malik.tahir@gmail.com",
-    tel: "+15147951812",
-    social: [
-      {
-        name: "GitHub",
-        url: "https://github.com/Agill-Sheron",
-        icon: GitHubIcon,
-      },
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/malik-aghiles-tahir/",
-        icon: LinkedInIcon,
-      },
-    ],
-  },
+  contact,
   education: [
     {
       school: "Concordia University",
@@ -56,10 +106,19 @@ export const RESUME_DATA = {
   ],
   work: [
     {
+      company: "Geyser Fund",
+      link: "https://geyser.fund/",
+      badges: ["React", "Typescript", "GraphQL","Prisma", "Postgres"],
+      title: "Full Stack Engineer",
+      start: "March 2024",
+      end: "October 2024",
+      description: "I was responsible for developing the frontend and backend of the platform with a greater focus on the frontend in close collaboration with fellow developers and the CTO. I played a key role in the re-design of the platform to improve the user experience and the overall look and feel of the platform.",
+    },
+    {
       company: "Activix Inc.",
       link: "https://www.activix.ca/en",
       badges: ["Vue.js","Laravel", "PostgreSQL"],
-      title: "Full Stack Developer",
+      title: "Full Stack Engineer",
      
       start: "Aug 2021",
       end: "Sep 2022",
@@ -70,7 +129,7 @@ export const RESUME_DATA = {
       company: "SnapX",
       link: "",
       badges: ["Blade", "Laravel"],
-      title: "Intern - Full Stack Developer",
+      title: "Intern - Full Stack Engineer",
       start: "May 2020",
       end: "Nov 2020",
       description:
@@ -86,23 +145,17 @@ export const RESUME_DATA = {
       description:
         "Revitalized video recording tool by upgrading its streaming codec. Conducted in-depth research on container technologies, influencing shift from VMs. Excelled in debugging, resolving critical issues through thorough root cause analysis",
     },
+    {
+      company: "Mining X",
+      link: "",
+      badges: [],
+      title: "Co-Founder",
+      start: "Jan 2018",
+      end: "Jan 2019",
+      description: "As co-founder of MiningX, I spearheaded the development and optimization of our mining infrastructure, from hardware and software configuration to troubleshooting and maintenance. I also played a key role in market analysis, supplier engagement, and customer education, delivering presentations on blockchain and Bitcoin technology. Additionally, I collaborated with Catallaxy RCGT on the design and execution of client-specific mining projects.",
+    }
   ],
-  skills: [
-    "JavaScript",
-    "Php/Laravel",
-    "Java",
-    "Vue.js",
-    "React",
-    "Node.js",
-    "Python",
-    "TensorFlow",
-    "PyTorch",
-    "Figma",
-    "Mongoose",
-    "Express",
-    "MongoDB",
-    "MySQL",
-  ],
+  skills: SKILLS,
   projects: [
     {
       title: "Forward 360",
@@ -121,6 +174,15 @@ export const RESUME_DATA = {
         href: "https://forward-360.netlify.app/",
       },
     },
+    {
+      title: "Geyser Fund",
+      techStack: ["React", "Typescript", "Jotai", "GraphQL","Prisma", "Postgres"],
+      description: "A crowdfunding platform aimed at accelerating bitcoin adoption using the Lightning Network.",
+      link: {
+        label: "geyser.fund",
+        href: "https://geyser.fund/",
+      },
+    },
   ],
 } as const;
 
@@ -135,22 +197,7 @@ export const RESUME_DATA_FR = {
     "Je suis un Ingénieur Full Stack et récent diplômé en informatique avec un esprit entrepreneurial profondément enraciné. Avec une année d'expérience enrichissante en stage suivie et d'un an en tant qu'ingénieur logiciel junior à intermédiaire, mon parcours a été marqué par un renforcement constant de mes compétences en programmation depuis 2020. Actuellement, je travaille principalement avec JavaScript, React, Node.js et MongoDB. J'ai 3 ans d'expérience sur une grande variété de projets",
   avatarUrl: "https://avatars.githubusercontent.com/u/29054481?v=4",
   personalWebsiteUrl: "",
-  contact: {
-    email: "ag.malik.tahir@gmail.com",
-    tel: "+15147951812",
-    social: [
-      {
-        name: "GitHub",
-        url: "https://github.com/Agill-Sheron",
-        icon: GitHubIcon,
-      },
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/malik-aghiles-tahir/",
-        icon: LinkedInIcon,
-      },
-    ],
-  },
+  contact,
   education: [
     {
       school: "Université Concordia",
@@ -160,6 +207,15 @@ export const RESUME_DATA_FR = {
     },
   ],
   work: [
+    {
+      company: "Geyser Fund",
+      link: "https://geyser.fund/",
+      badges: ["React", "Typescript", "GraphQL","Prisma", "Postgres"],
+      title: "Développeur Full Stack",
+      start: "Mars 2024",
+      end: "Octobre 2024",
+      description: "J'ai été responsable du développement de l'interface utilisateur et du backend de la plateforme, avec une attention particulière pour l'interface utilisateur, en collaboration étroite avec les autres développeurs et l'équipe produit. J'ai également joué un rôle clé dans la re-design de la plateforme pour améliorer l'expérience utilisateur et l'aspect visuel global de la plateforme.",
+    },
     {
       company: "Activix Inc.",
       link: "https://www.activix.ca/en",
@@ -190,23 +246,17 @@ export const RESUME_DATA_FR = {
       description:
         "Revitalisation de l'outil d'enregistrement vidéo en mettant à niveau son codec de streaming. Recherche approfondie sur les technologies de conteneurisation, influençant le processus de transition des VMs. Excellente performance en débogage, résolvant des problèmes critiques grâce à une analyse approfondie des causes sous-jacentes",
     },
+    {
+      company: "Mining X",
+      link: "",
+      badges: [],
+      title: "Co-Fondateur",
+      start: "Jan 2018",
+      end: "Jan 2019",
+      description: "En tant que co-fondateur de MiningX, j'ai dirigé le développement et l'optimisation de notre infrastructure minière, de la configuration matérielle et logicielle au dépannage et à la maintenance. J'ai également joué un rôle clé dans l'analyse de marché, la relation avec les fournisseurs et l'éducation des clients, en donnant des présentations sur la technologie blockchain et Bitcoin. De plus, j'ai collaboré avec Catallaxy RCGT à la conception et à l'exécution de projets miniers spécifiques aux clients.",
+    }
   ],
-  skills: [
-    "JavaScript",
-    "Php/Laravel",
-    "Java",
-    "Vue.js",
-    "React",
-    "Node.js",
-    "Python",
-    "TensorFlow",
-    "PyTorch",
-    "Figma",
-    "Mongoose",
-    "Express",
-    "MongoDB",
-    "MySQL",
-  ],
+  skills: SKILLS,
   projects: [
     {
       title: "Forward 360",
@@ -225,5 +275,15 @@ export const RESUME_DATA_FR = {
         href: "https://forward-360.netlify.app/",
       },
     },
+    {
+      title: "Geyser Fund",
+      techStack: ["React", "Typescript", "GraphQL","Prisma", "Postgres"],
+      description: "Une plateforme de financement participatif visant à accélérer l'adoption de Bitcoin en utilisant le Lightning Network.",
+      link: {
+        label: "geyser.fund",
+        href: "https://geyser.fund/",
+      },
+    },
+  
   ],
 } as const;
