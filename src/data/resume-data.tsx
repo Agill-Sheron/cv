@@ -46,7 +46,7 @@ const avatarUrl = "https://avatars.githubusercontent.com/u/29054481?v=4"
 
 const contact =  {
   email: "ag.malik.tahir@gmail.com",
-  tel: "+15147951812",
+  tel: "",
   social: [
     {
       name: "GitHub",
