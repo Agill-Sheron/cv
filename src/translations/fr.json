@@ -35,16 +35,16 @@
         "company": "Geyser Fund",
         "link": "https://geyser.fund/",
         "badges": ["React", "Typescript", "GraphQL", "Prisma", "Postgres"],
-        "title": "Développeur Full Stack",
+        "title": "Ingénieur Full Stack",
         "start": "Mars 2024",
         "end": "Octobre 2024",
-        "description": "J'ai été responsable du développement de l'interface utilisateur et du backend de la plateforme, avec une attention particulière pour l'interface utilisateur, en collaboration étroite avec les autres développeurs et l'équipe produit. J'ai également joué un rôle clé dans la re-design de la plateforme pour améliorer l'expérience utilisateur et l'aspect visuel global de la plateforme."
+        "description": "J'ai mené le développement front-end de leur plateforme de crowdfunding innovante, en étroite collaboration avec le CTO et les autres développeurs pour créer une expérience utilisateur fluide et engageante. J'ai joué un rôle clé dans la refonte de la plateforme, améliorant son attrait visuel et sa convivialité tout en assurant sa scalabilité et sa performance. Mes contributions ont été guidées par une compréhension approfondie des technologies front-end telles que TypeScript et React, et par un engagement à fournir des solutions de haute qualité en accord avec la mission de Geyser Fund d'accélérer l'adoption du Bitcoin."
       },
       {
         "company": "Activix Inc.",
         "link": "https://www.activix.ca/fr",
         "badges": ["Vue.js", "Laravel", "PostgreSQL"],
-        "title": "Développeur Full Stack",
+        "title": "Ingénieur Full Stack",
         "start": "Août 2021",
         "end": "Sept 2022",
         "description": "Sous la direction du CTO, mon collègue et moi avons mis en œuvre des améliorations de sécurité en séparant les rôles utilisateur et administrateur, renforçant ainsi l'intégrité de la plateforme. Implémentation d'une fonctionnalité CRM pour un appariement précis des images de voitures avec les spécifications des prospects. Refonte du code hérité en suivant les principes de responsabilité unique et l'architecture Lucide, améliorant ainsi l'efficacité du système. Mon approche de résolution de problèmes impliquait une analyse approfondie des causes afin d'implémenter les solutions optimales. J'ai assuré des processus CI/CD robustes en créant des tests unitaires complets pour chaque nouvelle fonctionnalité. Collaboration avec le CTO pour intégrer un outil d'analyse de données tiers, améliorant les informations commerciales des clients"
@@ -53,7 +53,7 @@
         "company": "SnapX",
         "link": "",
         "badges": ["Blade", "Laravel"],
-        "title": "Stagiaire - Développeur Full Stack",
+        "title": "Stagiaire - Ingénieur Full Stack",
         "start": "Mai 2020",
         "end": "Nov 2020",
         "description": "Localisation du contenu du site Web de l'anglais au français en utilisant PHP Laravel. Compétent en scrapage de données avec Scrapy et Beautiful Soup, j'ai compilé des ensembles de données critiques pour l'entreprise. J'ai joué un rôle clé dans l'intégration des paiements PayPal et soutenu les développeurs seniors dans la mise en œuvre du processus de facturation."
