@@ -32,6 +32,15 @@
     ],      
     "work": [
       {
+        "company": "HolderScan",
+        "link": "https://holderscan.com/",
+        "badges": ["React", "TypeScript", "Next.js", "Zustand", "SCSS"],
+        "title": "Frontend Engineer",
+        "start": "Jan 2025",
+        "end": "Present",
+        "description": "As the principal Frontend Engineer, I lead the planning and implementation of all new frontend features for this cryptocurrency token holder tracking platform. I'm responsible for creating a coherent design system to ensure consistent user experience across the platform, while systematically eliminating technical debt to improve code maintainability and performance. My work focuses on building scalable React components with TypeScript, managing application state with Zustand, and delivering a responsive, modern interface that serves thousands of crypto enthusiasts tracking real-time holder data."
+      },
+      {
         "company": "Geyser Fund",
         "link": "https://geyser.fund/",
         "badges": ["React", "Typescript", "GraphQL", "Prisma", "Postgres"],

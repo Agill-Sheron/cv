@@ -32,6 +32,15 @@
     ],
     "work": [
       {
+        "company": "HolderScan",
+        "link": "https://holderscan.com/",
+        "badges": ["React", "TypeScript", "Next.js", "Zustand", "SCSS"],
+        "title": "Ingénieur Frontend",
+        "start": "Jan 2025",
+        "end": "Présent",
+        "description": "En tant que principal Ingénieur Frontend, je dirige la planification et l'implémentation de toutes les nouvelles fonctionnalités frontend pour cette plateforme de suivi des détenteurs de tokens de cryptomonnaie. Je suis responsable de la création d'un système de design cohérent pour assurer une expérience utilisateur uniforme à travers la plateforme, tout en éliminant systématiquement la dette technique pour améliorer la maintenabilité du code et les performances. Mon travail se concentre sur la construction de composants React évolutifs avec TypeScript, la gestion de l'état de l'application avec Zustand, et la livraison d'une interface responsive et moderne qui sert des milliers d'enthousiastes crypto suivant les données des détenteurs en temps réel."
+      },
+      {
         "company": "Geyser Fund",
         "link": "https://geyser.fund/",
         "badges": ["React", "Typescript", "GraphQL", "Prisma", "Postgres"],
