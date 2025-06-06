@@ -19,7 +19,7 @@
     "location": "Montréal, Canada, HNE (UTC-5) 🇨🇦",
     "locationLink": "https://www.google.com/maps/place/Montreal,+QC,+Canada/",
     "summary": {
-      "general": "Je suis un Ingénieur Full Stack et récent diplômé en informatique avec un esprit entrepreneurial profondément enraciné. Avec une année d'expérience enrichissante en stage suivie et d'un an en tant qu'ingénieur logiciel junior à intermédiaire, mon parcours a été marqué par un renforcement constant de mes compétences en programmation depuis 2020. Actuellement, je travaille principalement avec JavaScript, React, Node.js et MongoDB. J'ai 3 ans d'expérience sur une grande variété de projets",
+      "general": "Je suis un Ingénieur Full Stack et récent diplômé en informatique avec un esprit entrepreneurial profondément enraciné. Avec une année d'expérience enrichissante en stage suivie et d'un an en tant qu'ingénieur logiciel junior à intermédiaire, mon parcours a été marqué par un renforcement constant de mes compétences en programmation depuis 2020. Actuellement, je travaille principalement avec JavaScript, React, Node.js et MongoDB. J'ai 4 ans d'expérience sur une grande variété de projets",
       "bitcoin": "Je suis un passionné de Bitcoin et je suis impliqué dans l'écosystème Bitcoin depuis 2018. Je connais bien la technologie et son potentiel à transformer la finance."
     },
     "education": [
@@ -122,10 +122,13 @@
       "Vue.js",
       "React",
       "Node.js",
+      "Next.js",
       "Python",
       "TensorFlow",
       "PyTorch",
       "Figma",
+      "SCSS",
+      "Zustand",
       "Mongoose",
       "Express",
       "MongoDB",

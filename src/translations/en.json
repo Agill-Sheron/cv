@@ -19,8 +19,8 @@
     "location": "Montreal, Canada, EST (UTC-5) 🇨🇦",
     "locationLink": "https://www.google.com/maps/place/Montreal,+QC,+Canada/",
     "summary": {
-      "general": "I am a Full Stack Engineer and recent Computer Science graduate with a deep-rooted entrepreneurial mindset. With a year of enriching internship experience followed by a year as a junior to mid-level software engineer, my journey has been marked by constant skill enhancement in programming since 2021. Currently, I work mostly with JavaScript, React, Node.js, and MongoDB. I have 3 years of experience working on a wide variety of projects",
-      "bitcoin": "My journey into the world of Bitcoin began in 2016, captivated by its potential to empower individuals and foster financial freedom. This fascination ignited a passion that led me to co-found MiningX, where I gained firsthand experience in the technical and operational aspects of Bitcoin mining. Driven by the desire to contribute more directly to this revolutionary technology, I embarked on a path of software development, honing my skills with the ultimate goal of returning to the Bitcoin ecosystem. Now, equipped with 3+ years of experience as a full-stack engineer and a deep understanding of front-end technologies like TypeScript and React, I'm ready to build innovative solutions that advance the Bitcoin movement."
+      "general": "I am a Full Stack Engineer and recent Computer Science graduate with a deep-rooted entrepreneurial mindset. With a year of enriching internship experience followed by a year as a junior to mid-level software engineer, my journey has been marked by constant skill enhancement in programming since 2021. Currently, I work mostly with JavaScript, React, Node.js, and MongoDB. I have 4 years of experience working on a wide variety of projects",
+      "bitcoin": "My journey into the world of Bitcoin began in 2016, captivated by its potential to empower individuals and foster financial freedom. This fascination ignited a passion that led me to co-found MiningX, where I gained firsthand experience in the technical and operational aspects of Bitcoin mining. Driven by the desire to contribute more directly to this revolutionary technology, I embarked on a path of software development, honing my skills with the ultimate goal of returning to the Bitcoin ecosystem. Now, equipped with 4+ years of experience as a full-stack engineer and a deep understanding of front-end technologies like TypeScript and React, I'm ready to build innovative solutions that advance the Bitcoin movement."
     },
     "education": [
       {
@@ -122,10 +122,13 @@
       "Vue.js",
       "React",
       "Node.js",
+      "Next.js",
       "Python",
       "TensorFlow",
       "PyTorch",
       "Figma",
+      "SCSS",
+      "Zustand",
       "Mongoose",
       "Express",
       "MongoDB",
