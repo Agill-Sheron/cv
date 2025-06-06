@@ -1,23 +1,4 @@
-import {
-  AmbitLogo,
-  BarepapersLogo,
-  BimLogo,
-  CDGOLogo,
-  ClevertechLogo,
-  ConsultlyLogo,
-  EvercastLogo,
-  Howdy,
-  JarockiMeLogo,
-  JojoMobileLogo,
-  Minimal,
-  MobileVikingsLogo,
-  MonitoLogo,
-  NSNLogo,
-  ParabolLogo,
-  TastyCloudLogo,
-  YearProgressLogo,
-} from "@/images/logos";
-import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { GitHubIcon, LinkedInIcon } from "@/components/icons";
 
 const about = {
   general : {
@@ -69,10 +50,13 @@ const SKILLS = [
   "Vue.js",
   "React",
   "Node.js",
+  "Next.js",
   "Python",
   "TensorFlow",
   "PyTorch",
   "Figma",
+  "SCSS",
+  "Zustand",
   "Mongoose",
   "Express",
   "MongoDB",
@@ -92,7 +76,7 @@ export const RESUME_DATA = {
   about:
     "Full Stack Engineer focused on building scalable and elegant solutions",
   summary:
-    "I am a Full Stack Engineer and recent Computer Science graduate with a deep-rooted entrepreneurial mindset. With a year of enriching internship experience followed by a year as a junior to mid-level software engineer, my journey has been marked by constant skill enhancement in programming since 2021. Currently, I work mostly with JavaScript, React, Node.js, and MongoDB. I have 3 years of experience working on a wide variety of projects",
+    "I am a Full Stack Engineer and recent Computer Science graduate with a deep-rooted entrepreneurial mindset. With a year of enriching internship experience followed by a year as a junior to mid-level software engineer, my journey has been marked by constant skill enhancement in programming since 2021. Currently, I work mostly with JavaScript, React, Node.js, and MongoDB. I have 4 years of experience working on a wide variety of projects",
   avatarUrl: "https://avatars.githubusercontent.com/u/29054481?v=4",
   personalWebsiteUrl: "",
   contact,
@@ -105,6 +89,15 @@ export const RESUME_DATA = {
     },
   ],
   work: [
+    {
+      company: "HolderScan",
+      link: "https://holderscan.com/",
+      badges: ["React", "TypeScript", "Next.js", "Zustand", "SCSS"],
+      title: "Frontend Engineer",
+      start: "March 2025",
+      end: "Present",
+      description: "As the principal Frontend Engineer, I lead the planning and implementation of all new frontend features for this cryptocurrency token holder tracking platform. I'm responsible for creating a coherent design system to ensure consistent user experience across the platform, while systematically eliminating technical debt to improve code maintainability and performance. My work focuses on building scalable React components with TypeScript, managing application state with Zustand, and delivering a responsive, modern interface that serves thousands of crypto enthusiasts tracking real-time holder data."
+    },
     {
       company: "Geyser Fund",
       link: "https://geyser.fund/",
@@ -194,7 +187,7 @@ export const RESUME_DATA_FR = {
   about:
     "Ingénieur Full Stack axé sur la création de solutions évolutives et élégantes",
   summary:
-    "Je suis un Ingénieur Full Stack et récent diplômé en informatique avec un esprit entrepreneurial profondément enraciné. Avec une année d'expérience enrichissante en stage suivie et d'un an en tant qu'ingénieur logiciel junior à intermédiaire, mon parcours a été marqué par un renforcement constant de mes compétences en programmation depuis 2020. Actuellement, je travaille principalement avec JavaScript, React, Node.js et MongoDB. J'ai 3 ans d'expérience sur une grande variété de projets",
+    "Je suis un Ingénieur Full Stack et récent diplômé en informatique avec un esprit entrepreneurial profondément enraciné. Avec une année d'expérience enrichissante en stage suivie et d'un an en tant qu'ingénieur logiciel junior à intermédiaire, mon parcours a été marqué par un renforcement constant de mes compétences en programmation depuis 2020. Actuellement, je travaille principalement avec JavaScript, React, Node.js et MongoDB. J'ai 4 ans d'expérience sur une grande variété de projets",
   avatarUrl: "https://avatars.githubusercontent.com/u/29054481?v=4",
   personalWebsiteUrl: "",
   contact,
@@ -207,6 +200,15 @@ export const RESUME_DATA_FR = {
     },
   ],
   work: [
+    {
+      company: "HolderScan",
+      link: "https://holderscan.com/",
+      badges: ["React", "TypeScript", "Next.js", "Zustand", "SCSS"],
+      title: "Ingénieur Frontend",
+      start: "Jan 2025",
+      end: "Présent",
+      description: "En tant que principal Ingénieur Frontend, je dirige la planification et l'implémentation de toutes les nouvelles fonctionnalités frontend pour cette plateforme de suivi des détenteurs de tokens de cryptomonnaie. Je suis responsable de la création d'un système de design cohérent pour assurer une expérience utilisateur uniforme à travers la plateforme, tout en éliminant systématiquement la dette technique pour améliorer la maintenabilité du code et les performances. Mon travail se concentre sur la construction de composants React évolutifs avec TypeScript, la gestion de l'état de l'application avec Zustand, et la livraison d'une interface responsive et moderne qui sert des milliers d'enthousiastes crypto suivant les données des détenteurs en temps réel."
+     },
     {
       company: "Geyser Fund",
       link: "https://geyser.fund/",
