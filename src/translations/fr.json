@@ -88,6 +88,24 @@
     ],
     "projects": [
       {
+        "title": "HolderScan",
+        "techStack": ["React", "TypeScript", "Next.js", "Zustand", "SCSS"],
+        "description": "Une plateforme de suivi des détenteurs de tokens de cryptomonnaie.",
+        "link": {
+          "label": "holderscan.com",
+          "href": "https://holderscan.com/"
+        }
+      },
+      {
+        "title": "Geyser Fund",
+        "techStack": ["React", "Typescript", "Jotai", "GraphQL", "Prisma", "Postgres"],
+        "description": "Une plateforme de financement participatif visant à accélérer l'adoption de Bitcoin en utilisant le Lightning Network.",
+        "link": {
+          "label": "geyser.fund",
+          "href": "https://geyser.fund/"
+        }
+      },
+      {
         "title": "Forward 360",
         "techStack": [
           "Projet Personnel",
@@ -102,15 +120,6 @@
         "link": {
           "label": "forward360.com",
           "href": "https://forward-360.netlify.app/"
-        }
-      },
-      {
-        "title": "Geyser Fund",
-        "techStack": ["React", "Typescript", "Jotai", "GraphQL", "Prisma", "Postgres"],
-        "description": "Une plateforme de financement participatif visant à accélérer l'adoption de Bitcoin en utilisant le Lightning Network.",
-        "link": {
-          "label": "geyser.fund",
-          "href": "https://geyser.fund/"
         }
       }
     ],

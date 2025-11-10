@@ -105,7 +105,7 @@ export function MainContent() {
         {!isPrint && (
         <Section>
           <h2 className="text-xl font-bold">{t('sections.about')}</h2>
-          <p className="text-pretty font-mono text-sm text-muted-foreground">
+          <p className="text-pretty font-mono text-sm text-gray-800">
             {t(`resume.summary.${translationKey}`)}
           </p>
           </Section>
@@ -189,11 +189,11 @@ export function MainContent() {
                     {RESUME_DATA.projects.map((project, index) => {
                     return (
                         <ProjectCard
-                        key={project.title}
-                        title={t(`resume.projects.${index}.title`)}
-                        description={t(`resume.projects.${index}.description`)}
-                        tags={project.techStack}
-                        link={"link" in project ? project.link.href : undefined}
+                          key={project.title}
+                          title={t(`resume.projects.${index}.title`)}
+                          description={t(`resume.projects.${index}.description`)}
+                          tags={project.techStack}
+                          link={"link" in project ? project.link.href : undefined}
                         />
                     );
                     })}

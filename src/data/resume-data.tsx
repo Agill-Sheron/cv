@@ -1,30 +1,5 @@
 import { GitHubIcon, LinkedInIcon } from "@/components/icons";
 
-const about = {
-  general : {
-    en: "Full Stack Engineer focused on building scalable and elegant solutions",
-    fr: "Ingénieur Full Stack axé sur la création de solutions évolutives et élégantes",
-  },
-  bitcoin : {
-    en: "Full Stack Engineer focused on promoting Bitcoin adoption",
-    fr: "Ingénieur Full Stack axé sur la promotion de l'adoption de Bitcoin",
-  }
-}
-
-const summary = {
-  general : {
-    en: "I am a Full Stack Engineer and recent Computer Science graduate with a deep-rooted entrepreneurial mindset. With a year of enriching internship experience followed by a year as a junior to mid-level software engineer, my journey has been marked by constant skill enhancement in programming since 2021. Currently, I work mostly with JavaScript, React, Node.js, and MongoDB. I have 3 years of experience working on a wide variety of projects",
-    fr: "Je suis un Ingénieur Full Stack et récent diplômé en informatique avec un esprit entrepreneurial profondément enraciné. Avec une année d'expérience enrichissante en stage suivie et d'un an en tant qu'ingénieur logiciel junior à intermédiaire, mon parcours a été marqué par un renforcement constant de mes compétences en programmation depuis 2020. Actuellement, je travaille principalement avec JavaScript, React, Node.js et MongoDB. J'ai 3 ans d'expérience sur une grande variété de projets",
-  },
-
-  bitcoin : {
-    en: "I am a Bitcoin enthusiast and have been involved in the Bitcoin ecosystem since 2018. I have a deep understanding of the technology and its potential impact on the financial landscape.",
-    fr: "Je suis un passionné de Bitcoin et je suis impliqué dans l'écosystème Bitcoin depuis 2018. Je connais bien la technologie et son potentiel à transformer la finance.",
-  }
-}
-
-const avatarUrl = "https://avatars.githubusercontent.com/u/29054481?v=4"
-
 const contact =  {
   email: "ag.malik.tahir@gmail.com",
   tel: "",
@@ -151,6 +126,24 @@ export const RESUME_DATA = {
   skills: SKILLS,
   projects: [
     {
+      title: "HolderScan",
+      techStack: ["React", "TypeScript", "Next.js", "Zustand", "SCSS"],
+      description: "A cryptocurrency token holder tracking platform.",
+      link: {
+        label: "holderscan.com",
+        href: "https://holderscan.com/",
+      },
+    },
+    {
+      title: "Geyser Fund",
+      techStack: ["React", "Typescript", "Jotai", "GraphQL","Prisma", "Postgres"],
+      description: "A crowdfunding platform aimed at accelerating bitcoin adoption using the Lightning Network.",
+      link: {
+        label: "geyser.fund",
+        href: "https://geyser.fund/",
+      },
+    },
+    {
       title: "Forward 360",
       techStack: [
         "Side Project",
@@ -167,15 +160,7 @@ export const RESUME_DATA = {
         href: "https://forward-360.netlify.app/",
       },
     },
-    {
-      title: "Geyser Fund",
-      techStack: ["React", "Typescript", "Jotai", "GraphQL","Prisma", "Postgres"],
-      description: "A crowdfunding platform aimed at accelerating bitcoin adoption using the Lightning Network.",
-      link: {
-        label: "geyser.fund",
-        href: "https://geyser.fund/",
-      },
-    },
+    
   ],
 } as const;
 
@@ -261,6 +246,24 @@ export const RESUME_DATA_FR = {
   skills: SKILLS,
   projects: [
     {
+      title: "HolderScan",
+      techStack: ["React", "TypeScript", "Next.js", "Zustand", "SCSS"],
+      description: "Une plateforme de suivi des détenteurs de tokens de cryptomonnaie.",
+      link: {
+        label: "holderscan.com",
+        href: "https://holderscan.com/",
+      },
+    },
+    {
+      title: "Geyser Fund",
+      techStack: ["React", "Typescript", "GraphQL","Prisma", "Postgres"],
+      description: "Une plateforme de financement participatif visant à accélérer l'adoption de Bitcoin en utilisant le Lightning Network.",
+      link: {
+        label: "geyser.fund",
+        href: "https://geyser.fund/",
+      },
+    },
+    {
       title: "Forward 360",
       techStack: [
         "Projet Personnel",
@@ -277,15 +280,7 @@ export const RESUME_DATA_FR = {
         href: "https://forward-360.netlify.app/",
       },
     },
-    {
-      title: "Geyser Fund",
-      techStack: ["React", "Typescript", "GraphQL","Prisma", "Postgres"],
-      description: "Une plateforme de financement participatif visant à accélérer l'adoption de Bitcoin en utilisant le Lightning Network.",
-      link: {
-        label: "geyser.fund",
-        href: "https://geyser.fund/",
-      },
-    },
+   
   
   ],
 } as const;
