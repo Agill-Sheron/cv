@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    i18n: {
-        locales: ['en', 'fr'],
-        defaultLocale: 'en',
-    },
+    // App Router uses custom internationalization via TranslationContext
 }
 
 module.exports = nextConfig
