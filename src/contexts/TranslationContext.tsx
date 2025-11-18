@@ -11,8 +11,11 @@ type NestedTranslations = {
 
 type TranslationContextType = {
   t: (key: string) => string;
+  tArray: (key: string) => any[];
+  tObject: (key: string) => any;
   locale: string;
   setLocale: (locale: string) => void;
+  translations: NestedTranslations | {};
 };
 
 const TranslationContext = createContext<TranslationContextType | undefined>(undefined);
@@ -42,6 +45,28 @@ export function TranslationProvider({ children }: { children: React.ReactNode })
     return typeof current === 'string' ? current : key;
   };
 
+  const tArray = (key: string): any[] => {
+    const keys = key.split('.');
+    let current: any = translations;
+    
+    for (const k of keys) {
+      current = current?.[k];
+    }
+    
+    return Array.isArray(current) ? current : [];
+  };
+
+  const tObject = (key: string): any => {
+    const keys = key.split('.');
+    let current: any = translations;
+    
+    for (const k of keys) {
+      current = current?.[k];
+    }
+    
+    return current || {};
+  };
+
   const handleSetLocale = (newLocale: string) => {
     setLocale(newLocale);
     document.documentElement.lang = newLocale;
@@ -49,7 +74,7 @@ export function TranslationProvider({ children }: { children: React.ReactNode })
   };
 
   return (
-    <TranslationContext.Provider value={{ t, locale, setLocale: handleSetLocale }}>
+    <TranslationContext.Provider value={{ t, tArray, tObject, locale, setLocale: handleSetLocale, translations }}>
       {children}
     </TranslationContext.Provider>
   );

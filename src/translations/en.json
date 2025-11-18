@@ -11,16 +11,15 @@
     "website": "Personal Website"
   },
   "resume": {
-    "name": "Malik Aghiles Tahir",
     "about": {
-      "general": "Full Stack Engineer focused on building scalable and elegant solutions",
-      "bitcoin": "Full Stack Engineer focused on promoting Bitcoin adoption"
+      "general": "Frontend Engineer focused on building scalable and elegant user experiences",
+      "bitcoin": "Frontend Engineer focused on promoting Bitcoin adoption"
     },
     "location": "Montreal, Canada, EST (UTC-5) 🇨🇦",
     "locationLink": "https://www.google.com/maps/place/Montreal,+QC,+Canada/",
     "summary": {
-      "general": "I am a Full Stack Engineer and recent Computer Science graduate with a deep-rooted entrepreneurial mindset. With a year of enriching internship experience followed by a year as a junior to mid-level software engineer, my journey has been marked by constant skill enhancement in programming since 2021. Currently, I work mostly with JavaScript, React, Node.js, and MongoDB. I have 4 years of experience working on a wide variety of projects",
-      "bitcoin": "My journey into the world of Bitcoin began in 2016, captivated by its potential to empower individuals and foster financial freedom. This fascination ignited a passion that led me to co-found MiningX, where I gained firsthand experience in the technical and operational aspects of Bitcoin mining. Driven by the desire to contribute more directly to this revolutionary technology, I embarked on a path of software development, honing my skills with the ultimate goal of returning to the Bitcoin ecosystem. Now, equipped with 4+ years of experience as a full-stack engineer and a deep understanding of front-end technologies like TypeScript and React, I'm ready to build innovative solutions that advance the Bitcoin movement."
+      "general": "I am a Frontend Engineer with a deep-rooted entrepreneurial mindset. With a year of enriching internship experience followed by years of professional software engineering, my journey has been marked by constant skill enhancement in programming since 2021. Currently, I specialize in JavaScript, TypeScript, React, and Next.js, with expertise in building modern, responsive user interfaces. I have 4 years of experience working on a wide variety of projects with a strong focus on frontend development",
+      "bitcoin": "My journey into the world of Bitcoin began in 2016, captivated by its potential to empower individuals and foster financial freedom. This fascination ignited a passion that led me to co-found MiningX, where I gained firsthand experience in the technical and operational aspects of Bitcoin mining. Driven by the desire to contribute more directly to this revolutionary technology, I embarked on a path of software development, honing my skills with the ultimate goal of returning to the Bitcoin ecosystem. Now, equipped with 4+ years of experience as a frontend engineer and a deep understanding of front-end technologies like TypeScript and React, I'm ready to build innovative solutions that advance the Bitcoin movement."
     },
     "education": [
       {
@@ -44,7 +43,7 @@
         "company": "Geyser Fund",
         "link": "https://geyser.fund/",
         "badges": ["React", "Typescript", "GraphQL", "Prisma", "Postgres"],
-        "title": "Full Stack Engineer",
+        "title": "Frontend Engineer",
         "start": "March 2024",
         "end": "October 2024",
         "description": "I spearheaded the front-end development of their innovative crowdfunding platform, collaborating closely with the CTO and fellow developers to create a seamless and engaging user experience. I was instrumental in the platform's redesign, enhancing its visual appeal and user-friendliness while ensuring its scalability and performance. My contributions were driven by a deep understanding of front-end technologies like TypeScript and React, and a commitment to delivering high-quality solutions that align with Geyser Fund's mission to accelerate Bitcoin adoption."

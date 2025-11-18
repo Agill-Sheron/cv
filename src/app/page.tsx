@@ -1,11 +1,9 @@
 import { Metadata } from "next";
-import { RESUME_DATA } from "@/data/resume-data";
 import { MainContent } from "@/components/MainContent";
-import { usePathname } from "next/navigation";
 
 export const metadata: Metadata = {
-  title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
-  description: RESUME_DATA.summary,
+  title: `Malik Aghiles Tahir | Frontend Engineer`,
+  description: "Frontend Engineer with a deep-rooted entrepreneurial mindset, specializing in JavaScript, TypeScript, React, and Next.js",
 };
 
 export default function Page() {
