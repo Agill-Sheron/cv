@@ -18,7 +18,7 @@
     "location": "Montréal, Canada, HNE (UTC-5) 🇨🇦",
     "locationLink": "https://www.google.com/maps/place/Montreal,+QC,+Canada/",
     "summary": {
-      "general": "Je suis un Ingénieur Frontend avec un esprit entrepreneurial profondément enraciné. Avec une année d'expérience enrichissante en stage suivie d'années d'ingénierie logicielle professionnelle, mon parcours a été marqué par un renforcement constant de mes compétences en programmation depuis 2021. Actuellement, je me spécialise en JavaScript, TypeScript, React et Next.js, avec une expertise dans la création d'interfaces utilisateur modernes et réactives. J'ai 4 ans d'expérience sur une grande variété de projets avec un fort accent sur le développement frontend",
+      "general": "Je suis un Ingénieur Frontend avec un esprit entrepreneurial profondément enraciné. Avec une année d'expérience enrichissante en stage suivie d'années d'ingénierie logicielle professionnelle, mon parcours a été marqué par un renforcement constant de mes compétences en programmation depuis 2020. Actuellement, je me spécialise en JavaScript, TypeScript, React et Next.js, avec une expertise dans la création d'interfaces utilisateur modernes et réactives. J'ai 4 ans d'expérience sur une grande variété de projets avec un fort accent sur le développement frontend",
       "bitcoin": "Mon voyage dans l'univers du Bitcoin a commencé en 2016, captivé par son potentiel à autonomiser les individus et à favoriser la liberté financière. Cette fascination a déclenché une passion qui m'a conduit à co-fonder MiningX, où j'ai acquis une expérience pratique des aspects techniques et opérationnels du minage de Bitcoin. Animé par le désir de contribuer plus directement à cette technologie révolutionnaire, je me suis lancé dans le développement logiciel, perfectionnant mes compétences avec l'objectif ultime de revenir à l'écosystème Bitcoin. Aujourd'hui, équipé de plus de 4 ans d'expérience en tant qu'ingénieur frontend et d'une compréhension approfondie des technologies front-end telles que TypeScript et React, je suis prêt à créer des solutions innovantes qui font progresser le mouvement Bitcoin."
     },
     "education": [
@@ -118,34 +118,9 @@
         "description": "Une plateforme logistique pour le 21e siècle. Offre un moyen simple et intuitif de gérer votre logistique.",
         "link": {
           "label": "forward360.com",
-          "href": "https://forward-360.netlify.app/"
-        }
+        "href": "https://forward-360.netlify.app/"
       }
-    ],
-    "skills": [
-      "JavaScript",
-      "Typescript",
-      "Php/Laravel",
-      "Java",
-      "Vue.js",
-      "React",
-      "Node.js",
-      "Next.js",
-      "Python",
-      "TensorFlow",
-      "PyTorch",
-      "Figma",
-      "SCSS",
-      "Zustand",
-      "Mongoose",
-      "Express",
-      "MongoDB",
-      "MySQL",
-      "GraphQL",
-      "Prisma",
-      "Jotai",
-      "AdminJs",
-      "Postgres"
+    }
     ]
   }
 }

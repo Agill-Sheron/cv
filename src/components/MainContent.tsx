@@ -35,7 +35,6 @@ export function MainContent() {
   // Get data from translations
   const workExperiences = tArray('resume.work');
   const education = tArray('resume.education');
-  const skills = tArray('resume.skills');
   const projects = tArray('resume.projects');
 
   return (
@@ -193,7 +192,7 @@ export function MainContent() {
         <Section>
           <h2 className="text-xl font-bold">{t('sections.skills')}</h2>
           <div className="flex flex-wrap gap-1">
-            {skills.map((skill: string) => {
+            {RESUME_CONFIG.skills.map((skill) => {
               return <Badge key={skill}>{skill}</Badge>;
             })}
           </div>

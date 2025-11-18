@@ -16,6 +16,31 @@ export const RESUME_CONFIG = {
         url: "https://www.linkedin.com/in/malik-aghiles-tahir/"
       }
     ]
-  }
+  },
+  skills: [
+    "TypeScript",
+    "React",
+    "Zustand",
+    "Next.js",
+    "JavaScript",
+    "Vue.js",
+    "Node.js",
+    "GraphQL",
+    "Prisma",
+    "Jotai",
+    "SCSS",
+    "Figma",
+    "Php/Laravel",
+    "Java",
+    "Python",
+    "TensorFlow",
+    "PyTorch",
+    "Mongoose",
+    "Express",
+    "MongoDB",
+    "MySQL",
+    "AdminJs",
+    "Postgres"
+  ]
 } as const;
 
