@@ -113,10 +113,12 @@ export function MainContent() {
             </div>
           </div>
 
-          <Avatar className="size-28">
-            <AvatarImage alt={RESUME_CONFIG.name} src={RESUME_CONFIG.avatarUrl} />
-            <AvatarFallback>{RESUME_CONFIG.initials}</AvatarFallback>
-          </Avatar>
+          {!isGeneral && (
+            <Avatar className="size-28">
+              <AvatarImage alt={RESUME_CONFIG.name} src={RESUME_CONFIG.avatarUrl} />
+              <AvatarFallback>{RESUME_CONFIG.initials}</AvatarFallback>
+            </Avatar>
+          )}
         </div>
         {!isPrint && (
         <Section>
@@ -128,46 +130,96 @@ export function MainContent() {
         )}
         <Section>
           <h2 className="text-xl font-bold">{t('sections.work')}</h2>
-          {workExperiences.map((work: any, index: number) => {
-            if (isGeneral && work.company === "Mining X") {
-              return null;
-            }
-            return (
-              <Card key={work.company}>
-                <CardHeader>
-                  <div className="flex items-center justify-between gap-x-2 text-base">
-                    <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
-                      <a className="hover:underline" href={work.link}>
-                        {work.company}
-                      </a>
-
-                      <span className="inline-flex gap-x-1">
-                        {work.badges.map((badge: string) => (
-                          <Badge
-                            variant="secondary"
-                            className="align-middle text-xs"
-                            key={badge}
-                          >
-                            {badge}
-                          </Badge>
-                        ))}
-                      </span>
-                    </h3>
-                    <div className="text-sm tabular-nums text-gray-500">
-                      {work.start} - {work.end}
+          <div className="relative">
+            {/* Vertical timeline line */}
+            <div className="absolute left-[9px] top-0 bottom-0 w-[2px] bg-gray-200"></div>
+            
+            {workExperiences.map((work: any, index: number) => {
+              if (isGeneral && work.company === "Mining X") {
+                return null;
+              }
+              
+              // Render gap divider
+              if (work.isGap) {
+                return (
+                  <div key={work.company} className="relative flex items-start gap-4 pb-8">
+                    {/* Timeline dot */}
+                    <div className="relative flex items-center justify-center w-5 h-5 rounded-full bg-white border-2 border-gray-300 mt-1 flex-shrink-0 z-10">
+                      <div className="w-2 h-2 rounded-full bg-gray-300"></div>
+                    </div>
+                    
+                    {/* Gap content */}
+                    <div className="flex-1 pt-0.5">
+                      <div className="flex items-center gap-2 text-sm text-gray-600">
+                        {work.end ? (
+                          <>
+                            <Badge variant="outline" className="text-xs font-normal text-gray-600 border-gray-300">
+                              {work.start} - {work.end}
+                            </Badge>
+                            <span>•</span>
+                          </>
+                        ) : (
+                          <>
+                            <Badge variant="outline" className="text-xs font-normal text-gray-600 border-gray-300">
+                              {work.start}
+                            </Badge>
+                            <span>•</span>
+                          </>
+                        )}
+                        <span className="italic">{work.gapText}</span>
+                      </div>
                     </div>
                   </div>
+                );
+              }
+              
+              return (
+                <div key={work.company} className="relative flex items-start gap-4 pb-8">
+                  {/* Timeline dot */}
+                  <div className="relative flex items-center justify-center w-5 h-5 rounded-full bg-white border-2 mt-1 flex-shrink-0 z-10" style={{ borderColor: '#1bc7ad' }}>
+                    <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#1bc7ad' }}></div>
+                  </div>
+                  
+                  {/* Card content */}
+                  <div className="flex-1">
+                    <Card>
+                      <CardHeader>
+                        <div className="flex items-center justify-between gap-x-2 text-base">
+                          <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
+                            <a className="hover:underline" href={work.link}>
+                              {work.company}
+                            </a>
 
-                  <h4 className="font-mono text-sm leading-none">
-                    {work.title}
-                  </h4>
-                </CardHeader>
-                <CardContent className="mt-2 text-xs">
-                  {work.description}
-                </CardContent>
-              </Card>
-            );
-          })}
+                            <span className="inline-flex gap-x-1">
+                              {work.badges?.map((badge: string) => (
+                                <Badge
+                                  variant="secondary"
+                                  className="align-middle text-xs"
+                                  key={badge}
+                                >
+                                  {badge}
+                                </Badge>
+                              ))}
+                            </span>
+                          </h3>
+                          <div className="text-sm tabular-nums text-gray-500">
+                            {work.start} - {work.end}
+                          </div>
+                        </div>
+
+                        <h4 className="font-mono text-sm leading-none">
+                          {work.title}
+                        </h4>
+                      </CardHeader>
+                      <CardContent className="mt-2 text-xs">
+                        {work.description}
+                      </CardContent>
+                    </Card>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </Section>
         <Section>
           <h2 className="text-xl font-bold">{t('sections.education')}</h2>

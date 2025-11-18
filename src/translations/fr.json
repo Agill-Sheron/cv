@@ -49,6 +49,13 @@
         "description": "J'ai mené le développement front-end de leur plateforme de crowdfunding innovante, en étroite collaboration avec le CTO et les autres développeurs pour créer une expérience utilisateur fluide et engageante. J'ai joué un rôle clé dans la refonte de la plateforme, améliorant son attrait visuel et sa convivialité tout en assurant sa scalabilité et sa performance. Mes contributions ont été guidées par une compréhension approfondie des technologies front-end telles que TypeScript et React, et par un engagement à fournir des solutions de haute qualité en accord avec la mission de Geyser Fund d'accélérer l'adoption du Bitcoin."
       },
       {
+        "company": "Pause académique",
+        "isGap": true,
+        "gapText": "Terminé la dernière année du diplôme en informatique",
+        "start": "Jan 2022",
+        "end": "Dec 2023"
+      },
+      {
         "company": "Activix Inc.",
         "link": "https://www.activix.ca/fr",
         "badges": ["Vue.js", "Laravel", "PostgreSQL"],
@@ -74,6 +81,13 @@
         "start": "Jan 2020",
         "end": "Avr 2020",
         "description": "Revitalisation de l'outil d'enregistrement vidéo en mettant à niveau son codec de streaming. Recherche approfondie sur les technologies de conteneurisation, influençant le processus de transition des VMs. Excellente performance en débogage, résolvant des problèmes critiques grâce à une analyse approfondie des causes sous-jacentes"
+      },
+      {
+        "company": "Début des études",
+        "isGap": true,
+        "gapText": "Début du baccalauréat en informatique à l'Université Concordia",
+        "start": "Sep 2018",
+        "end": ""
       },
       {
         "company": "Mining X",

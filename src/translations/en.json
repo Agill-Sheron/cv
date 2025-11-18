@@ -49,6 +49,13 @@
         "description": "I spearheaded the front-end development of their innovative crowdfunding platform, collaborating closely with the CTO and fellow developers to create a seamless and engaging user experience. I was instrumental in the platform's redesign, enhancing its visual appeal and user-friendliness while ensuring its scalability and performance. My contributions were driven by a deep understanding of front-end technologies like TypeScript and React, and a commitment to delivering high-quality solutions that align with Geyser Fund's mission to accelerate Bitcoin adoption."
       },
       {
+        "company": "Education Gap",
+        "isGap": true,
+        "gapText": "Completed final year of CS degree",
+        "start": "Jan 2023",
+        "end": "Dec 2023"
+      },
+      {
         "company": "Activix Inc.",
         "link": "https://www.activix.ca/en",
         "badges": ["Vue.js", "Laravel", "PostgreSQL"],
@@ -74,6 +81,13 @@
         "start": "Jan 2020",
         "end": "Apr 2020",
         "description": "Revitalized video recording tool by upgrading its streaming codec. Conducted in-depth research on container technologies, influencing shift from VMs. Excelled in debugging, resolving critical issues through thorough root cause analysis"
+      },
+      {
+        "company": "Education Start",
+        "isGap": true,
+        "gapText": "Started Bachelor's degree in Computer Science at Concordia University",
+        "start": "Sep 2018",
+        "end": ""
       },
       {
         "company": "Mining X",
