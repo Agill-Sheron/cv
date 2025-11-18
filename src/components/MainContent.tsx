@@ -30,7 +30,7 @@ export function MainContent() {
   const isGeneral = searchParams.has('general');
   const translationKey = isGeneral ? 'general' : 'bitcoin';
 
-  const isPrint = false;
+  const isPrint = true;
 
   // Get data from translations
   const workExperiences = tArray('resume.work');
@@ -38,8 +38,8 @@ export function MainContent() {
   const projects = tArray('resume.projects');
 
   return (
-    <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
-      <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6">
+    <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:px-6 print:py-4 md:p-16">
+      <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-4">
         <LanguageSwitcher />
         <div className="flex items-center justify-between">
           <div className="flex-1 space-y-1.5">
@@ -131,26 +131,26 @@ export function MainContent() {
         <Section>
           <h2 className="text-xl font-bold">{t('sections.work')}</h2>
           <div className="relative">
-            {/* Vertical timeline line */}
-            <div className="absolute left-[9px] top-0 bottom-0 w-[2px] bg-gray-200"></div>
+            {/* Vertical timeline line - hide on print */}
+            <div className="absolute left-[9px] top-0 bottom-0 w-[2px] bg-gray-200 print:hidden"></div>
             
             {workExperiences.map((work: any, index: number) => {
-              if (isGeneral && work.company === "Mining X") {
+              if ((isGeneral || isPrint) && work.company === "Mining X") {
                 return null;
               }
               
               // Render gap divider
               if (work.isGap) {
                 return (
-                  <div key={work.company} className="relative flex items-start gap-4 pb-8">
+                  <div key={work.company} className="relative flex items-start gap-4 pb-8 print:pb-4 print:justify-center">
                     {/* Timeline dot */}
-                    <div className="relative flex items-center justify-center w-5 h-5 rounded-full bg-white border-2 border-gray-300 mt-1 flex-shrink-0 z-10">
+                    <div className="relative flex items-center justify-center w-5 h-5 rounded-full bg-white border-2 border-gray-300 mt-1 flex-shrink-0 z-10 print:hidden">
                       <div className="w-2 h-2 rounded-full bg-gray-300"></div>
                     </div>
                     
                     {/* Gap content */}
-                    <div className="flex-1 pt-0.5">
-                      <div className="flex items-center gap-2 text-sm text-gray-600">
+                    <div className="flex-1 pt-0.5 print:flex-none print:text-center">
+                      <div className="flex items-center gap-2 text-sm text-gray-600 print:justify-center">
                         {work.end ? (
                           <>
                             <Badge variant="outline" className="text-xs font-normal text-gray-600 border-gray-300">
@@ -174,9 +174,9 @@ export function MainContent() {
               }
               
               return (
-                <div key={work.company} className="relative flex items-start gap-4 pb-8">
+                <div key={work.company} className="relative flex items-start gap-4 pb-8 print:pb-4">
                   {/* Timeline dot */}
-                  <div className="relative flex items-center justify-center w-5 h-5 rounded-full bg-white border-2 mt-1 flex-shrink-0 z-10" style={{ borderColor: '#1bc7ad' }}>
+                  <div className="relative flex items-center justify-center w-5 h-5 rounded-full bg-white border-2 mt-1 flex-shrink-0 z-10 print:hidden" style={{ borderColor: '#1bc7ad' }}>
                     <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#1bc7ad' }}></div>
                   </div>
                   
@@ -241,14 +241,16 @@ export function MainContent() {
             );
           })}
         </Section>
+        {!isPrint && (
         <Section>
-          <h2 className="text-xl font-bold">{t('sections.skills')}</h2>
-          <div className="flex flex-wrap gap-1">
-            {RESUME_CONFIG.skills.map((skill) => {
-              return <Badge key={skill}>{skill}</Badge>;
-            })}
-          </div>
-        </Section>
+            <h2 className="text-xl font-bold">{t('sections.skills')}</h2>
+            <div className="flex flex-wrap gap-1">
+              {RESUME_CONFIG.skills.map((skill) => {
+                return <Badge key={skill}>{skill}</Badge>;
+              })}
+            </div>
+          </Section>
+        )}
 
         {!isPrint && (
             <Section className="print-force-new-page scroll-mb-16">
