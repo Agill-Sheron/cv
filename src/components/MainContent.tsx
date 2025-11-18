@@ -30,7 +30,7 @@ export function MainContent() {
   const isGeneral = searchParams.has('general');
   const translationKey = isGeneral ? 'general' : 'bitcoin';
 
-  const isPrint = true;
+  const isPrint = false;
 
   // Get data from translations
   const workExperiences = tArray('resume.work');
@@ -39,7 +39,7 @@ export function MainContent() {
 
   return (
     <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:px-6 print:py-4 md:p-16">
-      <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-4">
+      <section className="mx-auto w-full max-w-3xl space-y-8 bg-white print:space-y-4">
         <LanguageSwitcher />
         <div className="flex items-center justify-between">
           <div className="flex-1 space-y-1.5">
@@ -131,8 +131,8 @@ export function MainContent() {
         <Section>
           <h2 className="text-xl font-bold">{t('sections.work')}</h2>
           <div className="relative">
-            {/* Vertical timeline line - hide on print */}
-            <div className="absolute left-[9px] top-0 bottom-0 w-[2px] bg-gray-200 print:hidden"></div>
+            {/* Vertical timeline line - hide on print and mobile */}
+            <div className="absolute left-[9px] top-0 bottom-0 w-[2px] bg-gray-200 print:hidden hidden md:block"></div>
             
             {workExperiences.map((work: any, index: number) => {
               if ((isGeneral || isPrint) && work.company === "Mining X") {
@@ -142,30 +142,19 @@ export function MainContent() {
               // Render gap divider
               if (work.isGap) {
                 return (
-                  <div key={work.company} className="relative flex items-start gap-4 pb-8 print:pb-4 print:justify-center">
-                    {/* Timeline dot */}
-                    <div className="relative flex items-center justify-center w-5 h-5 rounded-full bg-white border-2 border-gray-300 mt-1 flex-shrink-0 z-10 print:hidden">
+                  <div key={work.company} className="relative flex items-start gap-4 pb-8 print:pb-4 print:justify-center justify-center md:justify-start">
+                    {/* Timeline dot - hide on mobile and print */}
+                    <div className="relative flex items-center justify-center w-5 h-5 rounded-full bg-white border-2 border-gray-300 mt-1 flex-shrink-0 z-10 print:hidden hidden md:flex">
                       <div className="w-2 h-2 rounded-full bg-gray-300"></div>
                     </div>
                     
                     {/* Gap content */}
-                    <div className="flex-1 pt-0.5 print:flex-none print:text-center">
-                      <div className="flex items-center gap-2 text-sm text-gray-600 print:justify-center">
-                        {work.end ? (
-                          <>
-                            <Badge variant="outline" className="text-xs font-normal text-gray-600 border-gray-300">
-                              {work.start} - {work.end}
-                            </Badge>
-                            <span>•</span>
-                          </>
-                        ) : (
-                          <>
-                            <Badge variant="outline" className="text-xs font-normal text-gray-600 border-gray-300">
-                              {work.start}
-                            </Badge>
-                            <span>•</span>
-                          </>
-                        )}
+                    <div className="flex-1 pt-0.5 print:flex-none print:text-center md:flex-1 text-center md:text-left">
+                      <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-2 text-sm text-gray-600 print:justify-center items-center md:items-start">
+                        <Badge variant="outline" className="text-xs font-normal text-gray-600 border-gray-300 w-fit">
+                          {work.end ? `${work.start} - ${work.end}` : work.start}
+                        </Badge>
+                        <span className="hidden md:inline">•</span>
                         <span className="italic">{work.gapText}</span>
                       </div>
                     </div>
@@ -175,22 +164,22 @@ export function MainContent() {
               
               return (
                 <div key={work.company} className="relative flex items-start gap-4 pb-8 print:pb-4">
-                  {/* Timeline dot */}
-                  <div className="relative flex items-center justify-center w-5 h-5 rounded-full bg-white border-2 mt-1 flex-shrink-0 z-10 print:hidden" style={{ borderColor: '#1bc7ad' }}>
+                  {/* Timeline dot - hide on mobile and print */}
+                  <div className="relative flex items-center justify-center w-5 h-5 rounded-full bg-white border-2 mt-1 flex-shrink-0 z-10 print:hidden hidden md:flex" style={{ borderColor: '#1bc7ad' }}>
                     <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#1bc7ad' }}></div>
                   </div>
                   
                   {/* Card content */}
-                  <div className="flex-1">
+                  <div className="flex-1 md:flex-1">
                     <Card>
                       <CardHeader>
-                        <div className="flex items-center justify-between gap-x-2 text-base">
-                          <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
+                        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-x-2">
+                          <h3 className="inline-flex flex-wrap items-center gap-x-1 gap-y-1 font-semibold leading-none text-base">
                             <a className="hover:underline" href={work.link}>
                               {work.company}
                             </a>
 
-                            <span className="inline-flex gap-x-1">
+                            <span className="inline-flex flex-wrap gap-1">
                               {work.badges?.map((badge: string) => (
                                 <Badge
                                   variant="secondary"
@@ -202,12 +191,12 @@ export function MainContent() {
                               ))}
                             </span>
                           </h3>
-                          <div className="text-sm tabular-nums text-gray-500">
+                          <div className="text-sm tabular-nums text-gray-500 md:flex-shrink-0">
                             {work.start} - {work.end}
                           </div>
                         </div>
 
-                        <h4 className="font-mono text-sm leading-none">
+                        <h4 className="font-mono text-sm leading-none mt-1">
                           {work.title}
                         </h4>
                       </CardHeader>
